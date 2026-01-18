@@ -12,11 +12,12 @@ const Button = ({
   ...props
 }: TButtonProps) => {
   const baseStyles =
-    "inline-flex gap-2 duration-300 justify-center items-center cursor-pointer hover:scale-105";
+    "inline-flex gap-2 items-center justify-center font-medium transition-all duration-300 ease-out disabled:opacity-50 disabled:cursor-not-allowed";
   const variants = {
-    primary: "bg-primary text-white hover:bg-primary/85",
-    dark: "bg-dark text-white hover:bg-dark/85",
-    ghost: "bg-transparent text-dark hover:bg-gray/100",
+    primary:
+      "bg-primary text-white hover:bg-primary/90 hover:shadow-lg active:scale-[0.98]",
+    dark: "bg-dark text-white hover:bg-dark/90 hover:shadow-lg active:scale-[0.98]",
+    ghost: "bg-transparent text-dark hover:bg-dark/5 active:scale-[0.98]",
   };
 
   const sizes = {
