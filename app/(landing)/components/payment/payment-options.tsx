@@ -1,23 +1,6 @@
 import { FiCreditCard } from "react-icons/fi";
 import CardWithHeader from "../ui/card-with-header";
 import { getAllBanks } from "@/app/services/bank.service";
-const paymentList = [
-  {
-    bank_name: "BCA",
-    account_number: "0123182312",
-    account_holder: "PT SportsOn Digital",
-  },
-  {
-    bank_name: "BRI",
-    account_number: "83923912013203123",
-    account_holder: "PT SportsOn Digital",
-  },
-  {
-    bank_name: "BTNPN",
-    account_number: "5238218923",
-    account_holder: "PT SportsOn Digital",
-  },
-];
 
 const PaymentOptions = async () => {
   const banks = await getAllBanks();
