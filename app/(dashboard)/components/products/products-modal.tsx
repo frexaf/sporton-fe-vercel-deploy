@@ -199,9 +199,9 @@ const ProductModal = ({
               <label htmlFor="category">Category</label>
               <select
                 name="categoryId"
+                id="categoryId"
                 value={formData.categoryId}
                 onChange={handleChange}
-                id="category"
               >
                 <option value="" disabled>
                   Select Category
